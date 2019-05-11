@@ -1,12 +1,7 @@
-package com.ardaozceviz.cleanweather.controller
+package com.shakil.demoweatherapp.weather.controller
 
 import android.content.Context
 import android.util.Log
-import com.ardaozceviz.cleanweather.BuildConfig
-import com.ardaozceviz.cleanweather.model.ERR_RETRIEVE
-import com.ardaozceviz.cleanweather.model.ForecastDataModel
-import com.ardaozceviz.cleanweather.model.TAG_C_SERVER
-import com.ardaozceviz.cleanweather.view.UserInterface
 import com.google.gson.Gson
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.JsonHttpResponseHandler
