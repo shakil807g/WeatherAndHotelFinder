@@ -1,0 +1,22 @@
+package com.shakil.demoweatherapp.restaurant
+
+import android.widget.ImageView
+import com.shakil.demoweatherapp.R
+import com.squareup.picasso.Picasso
+
+
+val baseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
+val basePlaceDetailUrl = "https://maps.googleapis.com/maps/api/place/details/json?"
+val key = "AIzaSyBMo0u-b-yYtEob5Nttl7cSpyS0M_NfhSg"
+
+
+fun ImageView.loadImg(imageUrl: String?, placeHolder: Int = R.drawable.img_placeholder) {
+    if (imageUrl != null && imageUrl.trim().isEmpty()) {
+        setImageResource(placeHolder)
+    } else {
+        Picasso.get().load(imageUrl)
+            .placeholder(placeHolder)
+            .centerCrop()
+            .fit().into(this)
+    }
+}

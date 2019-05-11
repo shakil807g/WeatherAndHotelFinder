@@ -2,6 +2,7 @@ package com.shakil.demoweatherapp.weather.view
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.location.Geocoder
 import android.support.design.widget.Snackbar
 import android.support.v4.content.ContextCompat
@@ -12,6 +13,7 @@ import android.widget.Toast
 import com.shakil.demoweatherapp.weather.view.mappers.ForecastDataMapper
 import com.shakil.demoweatherapp.weather.view.mappers.ForecastItemMapper
 import com.shakil.demoweatherapp.R
+import com.shakil.demoweatherapp.restaurant.view.RestaurantListActivity
 import com.shakil.demoweatherapp.weather.controller.LocalForecastData
 import com.shakil.demoweatherapp.weather.controller.LocationServices
 import com.shakil.demoweatherapp.weather.model.*
@@ -43,6 +45,11 @@ class UserInterface(private val context: Context) {
             // This method performs the actual data-refresh operation.
             // The method calls setRefreshing(false) when it's finished.
             LocationServices(context).locationPermission()
+        }
+
+        activity.button.setOnClickListener {
+            context.startActivity(Intent(context,RestaurantListActivity::class.java))
+
         }
 
         toggleData.setOnCheckedChangeListener { _, checkedId ->

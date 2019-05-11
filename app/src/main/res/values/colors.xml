@@ -8,7 +8,7 @@
 <resources>
     <color name="colorPrimary">#FAD9B4</color>
     <color name="colorPrimaryDark">#5A4228</color>
-    <color name="colorAccent">#B4710D</color>
+    <color name="colorAccent">#FD9A02</color>
 
     <color name="colorText">#ffffff</color>
     <color name="body">#FAD9B4</color>
@@ -16,5 +16,6 @@
     <color name="textLight">#89663F</color>
     <color name="buttonColor">#CB9F71</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="blue">#5194DC</color>
 
 </resources>

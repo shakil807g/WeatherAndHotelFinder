@@ -188,7 +188,6 @@
                 app:layout_constraintTop_toTopOf="@+id/Humidity"
                 app:layout_constraintBottom_toBottomOf="@+id/Humidity"/>
         <TextView
-                android:text="10%"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/main_view_precip"

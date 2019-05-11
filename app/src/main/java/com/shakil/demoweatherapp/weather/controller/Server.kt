@@ -21,7 +21,7 @@ class Server(val context: Context) {
     private val userInterface = UserInterface(context)
     fun getWeatherForCurrentLocation(longitude: String, latitude: String) {
         Log.d(TAG_C_SERVER, "getWeatherForCurrentLocation() is executed.")
-        val link = forecastUrl + "$latitude,$longitude"
+        val link = "$forecastUrl$latitude,$longitude"
         Log.d(TAG_C_SERVER, "getWeatherForCurrentLocation() link: $link")
         requestForecastData(link)
     }
