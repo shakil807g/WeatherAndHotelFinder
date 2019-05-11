@@ -7,7 +7,7 @@ import com.squareup.picasso.Picasso
 
 val baseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
 val basePlaceDetailUrl = "https://maps.googleapis.com/maps/api/place/details/json?"
-val key = "AIzaSyBMo0u-b-yYtEob5Nttl7cSpyS0M_NfhSg"
+val key = "AIzaSyB_SGF4nGa56t9NnqtZ1kixeVnhQuEfaCY"
 
 
 fun ImageView.loadImg(imageUrl: String?, placeHolder: Int = R.drawable.img_placeholder) {

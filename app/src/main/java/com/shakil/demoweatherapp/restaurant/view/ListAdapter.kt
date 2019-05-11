@@ -27,11 +27,14 @@ class ListAdapter(val data: List<HotelModel>) : RecyclerView.Adapter<ListAdapter
     class HotelHolder(item: View) : RecyclerView.ViewHolder(item) {
 
         fun bind(hotelModel : HotelModel) {
+            print(hotelModel.photo)
             itemView.rootView.imageView.loadImg(hotelModel.photo)
             itemView.rootView.name.text = hotelModel.name
             itemView.rootView.rating.text = hotelModel.rating
-            itemView.rootView.ratingBar.rating = hotelModel.rating.toFloat()
-
+            try {
+                itemView.rootView.ratingBar.rating = hotelModel.rating.toFloat() //some time data can be null
+            } catch (e: Exception) {
+            }
 
 
         }

@@ -43,7 +43,7 @@ class RestaurantListActivity: BaseActivity(){
             }else{
                 main_swipe_refresh_layout.isEnabled = false
                 main_swipe_refresh_layout.isRefreshing = false
-              Toast.makeText(this,error,Toast.LENGTH_LONG).show()
+                Toast.makeText(this,error,Toast.LENGTH_LONG).show()
             }
 
         }.apply { locationPermission() }
