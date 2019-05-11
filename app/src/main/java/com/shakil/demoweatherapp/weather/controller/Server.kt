@@ -5,6 +5,10 @@ import android.util.Log
 import com.google.gson.Gson
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.JsonHttpResponseHandler
+import com.shakil.demoweatherapp.weather.model.ERR_RETRIEVE
+import com.shakil.demoweatherapp.weather.model.ForecastDataModel
+import com.shakil.demoweatherapp.weather.model.TAG_C_SERVER
+import com.shakil.demoweatherapp.weather.view.UserInterface
 import cz.msebera.android.httpclient.Header
 import org.json.JSONObject
 

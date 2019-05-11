@@ -18,6 +18,9 @@ import com.karumi.dexter.listener.PermissionDeniedResponse
 import com.karumi.dexter.listener.PermissionGrantedResponse
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.single.PermissionListener
+import com.shakil.demoweatherapp.weather.view.ERR_LOCATE
+import com.shakil.demoweatherapp.weather.view.TAG_C_LOCATION
+import com.shakil.demoweatherapp.weather.view.UserInterface
 
 
 /**
@@ -34,6 +37,7 @@ class LocationServices(private val context: Context) {
     * Refresh the weather location on location changed
     * */
     private var locationListener: LocationListener = object : LocationListener {
+        @SuppressLint("MissingPermission")
         override fun onLocationChanged(location: Location?) {
             Log.d(TAG_C_LOCATION, "locationListener onLocationChanged() is executed.")
             if (location != null) {
